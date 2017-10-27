@@ -51,7 +51,7 @@ upper-case-toggle
 // ничего полезного, просто прикольный плагин
 activate-power-mode
 ```
-## keymap
+## keymap.cson
 ```coffee
 'atom-workspace atom-text-editor:not([mini])':
     'ctrl-d': 'editor:duplicate-lines'
@@ -59,4 +59,24 @@ activate-power-mode
     'ctrl-b': 'find-and-replace:toggle-whole-word-option'
 'atom-text-editor':
     'ctrl-u': 'upper-case:toggle'
+```
+
+## config.cson
+```coffee
+
+"*":
+  ...
+  // у atom по умолчанию табы как 2 пробела
+  editor:
+    fontSize: 12
+    invisibles: {}
+    tabLength: 4
+  ...
+  // настройка для file-types
+  "file-types":
+    ".html": "text.html.jsp"
+  ...
+  whitespace:
+    removeTrailingWhitespace: false
+  ...
 ```
