@@ -26,6 +26,7 @@ highlight-selected
 // runtime валидация ситаксиса js, 
 // строки с ошибками подсвечивает красным
 linter
+// в настройках нужно указать use global eslint
 linter-eslint
 
 // помогает писать .md файлы
@@ -88,7 +89,11 @@ activate-power-mode
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
         "no-console": "off",
-        "comma-dangle": ["error", "never"]
+        "comma-dangle": ["error", "never"],
+        "one-var": "off"
+    },
+    "parserOptions": {
+        "ecmaVersion": 8
     },
     "env": {
         "browser": true,
