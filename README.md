@@ -25,7 +25,8 @@ highlight-selected
 
 // runtime валидация ситаксиса js, 
 // строки с ошибками подсвечивает красным
-jshint
+linter
+linter-eslint
 
 // помогает писать .md файлы
 language-markdown
@@ -79,4 +80,22 @@ activate-power-mode
   whitespace:
     removeTrailingWhitespace: false
   ...
+```
+## .eslintrc
+```js
+{  
+    "rules": {  
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-console": "off"
+    },
+    "env": {
+        "browser": true,
+        "amd": true
+    },
+    "globals": {
+        "system": true,
+        "console": true
+    }
+}
 ```
