@@ -87,7 +87,8 @@ activate-power-mode
     "rules": {  
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
-        "no-console": "off"
+        "no-console": "off",
+        "comma-dangle": ["error", "never"]
     },
     "env": {
         "browser": true,
