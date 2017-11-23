@@ -82,9 +82,10 @@ activate-power-mode
     removeTrailingWhitespace: false
   ...
 ```
-## .eslintrc
+## .eslintrc.json
 ```js
 {  
+    "extends": "eslint:recommended",
     "rules": {  
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
