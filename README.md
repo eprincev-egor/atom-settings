@@ -59,6 +59,7 @@ activate-power-mode
     'ctrl-d': 'editor:duplicate-lines'
 '.platform-win32 atom-text-editor':
     'ctrl-b': 'find-and-replace:toggle-whole-word-option'
+    'ctrl-o': 'fuzzy-finder:toggle-file-finder'
 'atom-text-editor':
     'ctrl-u': 'upper-case:toggle'
 ```
